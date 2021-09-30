@@ -4,6 +4,7 @@ class BooksController < ApplicationController
   # GET /books or /books.json
   def index
     @books = Book.all
+    flash[:snozberries] = "The snozberries taste like snozberries!" 
   end
 
   # GET /books/1 or /books/1.json
