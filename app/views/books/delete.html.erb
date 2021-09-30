@@ -1,0 +1,16 @@
+<h1>Destroying Book</h1>
+<h3>Are you sure you want to destroy the following book?</h3>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %> <br>
+  <strong>Author:</strong>
+  <%= @book.author %> <br>
+  <strong>Price: $</strong>
+  <%= @book.price %> <br>
+  <strong>Published:</strong>
+  <%= @book.published_date %>
+</p>
+
+<%= link_to 'Back', books_path %>
+<td><%= link_to 'Destroy', @book,  method: :delete, data: { confirm: 'Are you sure?' } %></td>
